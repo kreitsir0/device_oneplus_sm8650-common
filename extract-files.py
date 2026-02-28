@@ -98,7 +98,8 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libbinder_shim.so'),
     ('vendor/etc/media_codecs_cliffs_v0.xml', 'vendor/etc/media_codecs_cliffs_v1.xml', 'vendor/etc/media_codecs_pineapple.xml'): blob_fixup()
-        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
+        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', '')
+        .regex_replace(r'(<MediaCodecs>)', r'\1\n    <Include href="media_codecs_dolby_audio.xml" />'),
     'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
         .add_line_if_missing('sched_get_priority_min: 1')
         .add_line_if_missing('sched_get_priority_max: 1'),
