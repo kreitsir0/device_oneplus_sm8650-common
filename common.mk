@@ -335,10 +335,6 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,qtipower,mode_ext_lib,power-ext-oplus)
 
-# QTI fwk-detect
-PRODUCT_PACKAGES += \
-    libvndfwk_detect_jni.qti_vendor # Needed by CNE app
-
 # QSPA
 PRODUCT_PACKAGES += \
     qspa_vendor.rc \
