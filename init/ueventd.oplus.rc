@@ -29,3 +29,7 @@ firmware_directories /mnt/vendor/persist/display/
 /dev/block/bootdevice/by-name/oplusreserve5    0660    root    system
 /dev/block/sdf5   0660   root     system
 /dev/block/sdf6   0660   root     system
+
+# HTPR
+/sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a90000.spi/spi_master/spi0/spi0.0/synaptics_tcm_hbp.0/high_rate    0664    system    system
+/sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a90000.spi/spi_master/spi1/spi1.0/synaptics_tcm_hbp.0/high_rate    0664    system    system
