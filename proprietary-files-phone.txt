@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 12 (CPH2573_16.0.3.500(EX01)).
+## are from OnePlus 12 (CPH2573_16.0.5.702(EX01)).
 
 # CNE
 vendor/app/CACertService/CACertService.apk
@@ -396,7 +396,7 @@ odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 odm/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
 odm/lib64/vendor.oplus.hardware.subsys-V5-ndk.so
-odm/lib64/vendor.oplus.hardware.subsys_radio-V8-ndk.so
+odm/lib64/vendor.oplus.hardware.subsys_radio-V9-ndk.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
