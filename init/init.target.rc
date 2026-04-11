@@ -241,3 +241,7 @@ on property:vendor.post_boot.parsed=1
     # dex2oat settings
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
     setprop dalvik.vm.dex2oat-threads 6
+
+    # Enable ADFR features (only functions on supported devices)
+    write /sys/kernel/oplus_display/adfr_config 0x109f
+
