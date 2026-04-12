@@ -498,6 +498,16 @@
                 "1"
             ],
             "HoldFd": true
+        },
+        {
+            "Name": "GPUMinFreq",
+            "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
+            "Values": [
+                "231000000",
+                "500000000"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
         }
     ],
     "Actions": [
@@ -505,7 +515,7 @@
             "PowerHint": "INTERACTION",
             "Node": "sysDevicesSystemCpuBusDcvsDdr24091000QcomBwmonDdrMinFreq",
             "Value": "681000",
-            "Duration": 0
+            "Duration": 400
         },
         {
             "PowerHint": "INTERACTION",
@@ -535,7 +545,7 @@
             "PowerHint": "INTERACTION",
             "Node": "procSysWaltSchedBoost",
             "Value": "2",
-            "Duration": 0
+            "Duration": 400
         },
         {
             "PowerHint": "INTERACTION",
@@ -547,31 +557,31 @@
             "PowerHint": "INTERACTION",
             "Node": "procSysWaltSchedBusyHysteresisEnableCpus",
             "Value": "255",
-            "Duration": 0
+            "Duration": 400
         },
         {
             "PowerHint": "INTERACTION",
             "Node": "procSysWaltSchedBusyHystNs",
             "Value": "99",
-            "Duration": 0
+            "Duration": 400
         },
         {
             "PowerHint": "INTERACTION",
             "Node": "sysDevicesSystemCpuCpu0CoreCtlMinCpus",
             "Value": "3",
-            "Duration": 0
+            "Duration": 400
         },
         {
             "PowerHint": "INTERACTION",
             "Node": "procSysWaltSchedMinTaskUtilForColocation",
             "Value": "0",
-            "Duration": 0
+            "Duration": 4000
         },
         {
             "PowerHint": "INTERACTION",
             "Node": "procSysWaltSchedMinTaskUtilForBoost",
             "Value": "0",
-            "Duration": 0
+            "Duration": 400
         },
         {
             "PowerHint": "INTERACTION",
@@ -1142,6 +1152,12 @@
             "Node": "sysKernelMsmPerformanceParametersCpuMinFreq",
             "Value": "0:1574400 1:1574400 2:1286400 3:1286400 4:1286400 5:2131200 6:2131200 7:1593600",
             "Duration": 1000
+        },
+        {
+            "PowerHint": "EXPENSIVE_RENDERING",
+            "Node": "GPUMinFreq",
+            "Value": "500000000",
+            "Duration": 0
         }
     ]
 }
