@@ -317,6 +317,11 @@ PRODUCT_PACKAGES += \
     FrameworksResTargetPhone
 endif
 
+# Packages
+PRODUCT_PACKAGES += \
+    IncludePackages \
+    RemovePackages
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
